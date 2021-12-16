@@ -113,7 +113,7 @@ class VideoController extends Controller
   
         if ($video = $request->file('video')) {
             $destinationPath = 'video/';
-            $profileVideo = date('YmdHis') . "." . $video->getClientOriginalExtension();
+            $profileVideo = date('YmdHis') . "." . $video->getClientOriginalName();
             $video->move($destinationPath, $profileVideo);
             $input['video'] = "$profileVideo";
         }else{
