@@ -5,7 +5,7 @@
     $counter = 1;
     @endphp --}}
 
-    <section class="blog">
+    <section class="blog" id="blog">
         <h1>Blog</h1>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa facilis eos enim dolorum qui quaerat atque ab
             maiores porro quis ad quisquam ipsum nisi beatae, accusamus aliquid! Velit, eaque optio!</p>
@@ -15,7 +15,7 @@
             maiores porro quis ad quisquam ipsum nisi beatae, accusamus aliquid! Velit, eaque optio!</p>
     </section>
 
-    <section class="gallery">
+    <section class="gallery" id="gallery">
         <h1>Gallery</h1>
 
         @foreach ($fotos as $photo)
