@@ -4,7 +4,6 @@
 <div class="sidebar">
     <a class="active" href="#home">Home</a>
     <a href="{{ route('photos.index') }}">Foto</a>
-    <a href="{{ route('videos.index') }}">Video</a>
   </div>
   
   <div class="content">

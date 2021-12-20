@@ -105,17 +105,14 @@
 
     <section class="video">
         <h1>Video</h1>
-        @foreach ($videos as $video)
-            <div class="card bg-dark text-white">
-                <video class="card-img-top" controls>
-                    <source src="/video/{{ $video->video }}">
-                </video>
-                {{-- <div class="card-img-overlay">
-                    <h5 class="card-title">{{ $video->name }}</h5>
-                    <p class="card-text">{{ $video->detail }}</p>
-                </div> --}}
-            </div>
-        @endforeach
+
+        <center>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/gJCA_ZevsYM" title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+        </center>
+
     </section>
 
     <div class="clear-left"></div>

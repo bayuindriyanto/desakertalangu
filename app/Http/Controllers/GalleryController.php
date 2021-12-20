@@ -3,7 +3,6 @@
 namespace App\Http\Controllers;
 
 use App\Models\Photo;
-use App\Models\Video;
 use Illuminate\Http\Request;
 
 class GalleryController extends Controller
@@ -21,14 +20,13 @@ class GalleryController extends Controller
     public function index()
     {
         $fotos = Photo::latest()->paginate(5);
-        $videos = Video::latest()->paginate(5);
 
     
-        return view('home.gallery',compact('fotos','videos'));
+        return view('home.gallery',compact('fotos'));
 
     }
 
-    public function show(Photo $foto, Video $video)
+    public function show(Photo $foto)
     {
         return view('home.gallery',compact('foto', 'video'));
 
